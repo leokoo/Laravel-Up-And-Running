@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'TasksController@home');
+Route::get('tasks/create', 'TasksController@create');
+Route::post('tasks', 'TasksController@store');
 
 Route::get ( 'about' , function () { 
 	return view ( 'about' ); 
